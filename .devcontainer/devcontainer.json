@@ -1,0 +1,7 @@
+{
+  "name": "Devcontainer",
+  "build": {
+    "dockerfile": "./Dockerfile"
+  },
+  "runArgs": ["-platform=linux/amd64"]
+}

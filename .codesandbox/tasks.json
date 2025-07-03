@@ -1,0 +1,21 @@
+{
+  "setupTasks": [],
+  "tasks": {
+    "deno run -A .scripts/index.ts": {
+      "name": "Preload sandboxes",
+      "command": "deno run -A .scripts/index.ts"
+    },
+    "generate files": {
+      "name": "Generate Files",
+      "command": "deno run -A .scripts/generate-files.ts"
+    },
+    "generate dependabot": {
+      "name": "Generate Dependabot",
+      "command": "deno run -A .scripts/dependabot.ts"
+    },
+    "restart all templates": {
+      "name": "Restart all templates",
+      "command": "deno run -A .scripts/restart-all-templates.ts"
+    }
+  }
+}
