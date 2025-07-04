@@ -17,32 +17,7 @@ const VITE_TEMPLATES = {
   "vue-vite": "npm create vite@latest {key} -- --template vue-ts",
 
   // Next.js
-  nextjs: `npx --yes create-next-app {key} --ts --eslint --tailwind --no-src-dir --app --import-alias "@/*" --turbopack --use-pnpm`,
-  "nextjs-app-router": `npx --yes create-next-app {key} --ts --eslint --no-tailwind --no-src-dir --app --import-alias "@/*" --use-pnpm`,
-
-  // Nuxt.js
-  nuxt: `npx --yes nuxi@latest init {key}`,
-
-  // Nuxt.js on Edge + Drizzle
-  "nuxt-todos-edge":
-    "npx --yes degit https://github.com/Atinux/nuxt-todos-edge.git {key}",
-
-  // Remix
-  remix: `npx --yes create-remix@latest {key}`,
-
-  // Rust + Axum
-  "rust-axum": `npx --yes degit https://github.com/tokio-rs/axum.git/examples/hello-world {key}`,
-
-  "hono-next": `npm create hono@latest {key}`,
-
-  "storybook-react": `npx --yes degit chromaui/intro-storybook-react-template {key}`,
-
-  rails: "gem install rails && rails new --database=postgresql {key}",
-
-  nest: "npx --yes @nestjs/cli new {key}",
-
-  "tanstack-start":
-    "npx --yes degit https://github.com/tanstack/router/examples/react/start-basic {key}",
+  nextjs: `npx --yes create-next-app {key} --yes`,
 };
 
 const templatesToUpdate = process.argv.slice(3);
