@@ -12,7 +12,7 @@ const templates = await getTemplates(true);
 
 const templateInfos = await Promise.all(
   [...templates].map(async (template) => {
-    const url = `https://codesandbox.io/api/v1/sandboxes/github/codesandbox/sandbox-templates/tree/main/${template}`;
+    const url = `https://codesandbox.io/api/v1/sandboxes/github/legionedge/sandbox-templates/tree/main/${template}`;
 
     const { data } = await fetch(url).then((x) => x.json());
 
@@ -22,7 +22,7 @@ const templateInfos = await Promise.all(
       description: data.description as string,
       iconUrl: data.custom_template.icon_url as string,
       tags: data.tags as string[],
-      editorUrl: `https://codesandbox.io/s/github/codesandbox/sandbox-templates/tree/main/${template}`,
+      editorUrl: `https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/${template}`,
       forkCount: data.fork_count as number,
       viewCount: data.view_count as number,
       likeCount: data.like_count as number,
