@@ -7,7 +7,7 @@
     "tags": [],
     "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/astro-tailwind",
     "forkCount": 0,
-    "viewCount": 13,
+    "viewCount": 18,
     "likeCount": 0,
     "author": null,
     "git": {
@@ -22,12 +22,12 @@
   {
     "id": "knzj76",
     "title": "nextjs",
-    "description": "The official Next.js template by the CodeSandbox team",
+    "description": "The official Next.js template by the LegionEdge team",
     "iconUrl": "github",
     "tags": [],
     "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/nextjs",
     "forkCount": 0,
-    "viewCount": 20,
+    "viewCount": 25,
     "likeCount": 0,
     "author": null,
     "git": {
@@ -47,7 +47,7 @@
     "tags": [],
     "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/vite-ts",
     "forkCount": 0,
-    "viewCount": 11,
+    "viewCount": 18,
     "likeCount": 0,
     "author": null,
     "git": {
