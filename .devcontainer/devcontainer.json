@@ -3,5 +3,14 @@
   "build": {
     "dockerfile": "./Dockerfile"
   },
-  "runArgs": ["-platform=linux/amd64"]
+  "customizations": {
+    "vscode": {
+      "extensions": ["denoland.vscode-deno"]
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers-extra/features/deno": {},
+"ghcr.io/devcontainers-extra/features/neovim-apt-get:1": {},    "ghcr.io/devcontainers/features/rust:1": {},
+    "ghcr.io/devcontainers/features/ruby:1": {}
+  }
 }
