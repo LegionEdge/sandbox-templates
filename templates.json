@@ -7,7 +7,7 @@
     "tags": [],
     "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/astro-tailwind",
     "forkCount": 0,
-    "viewCount": 19,
+    "viewCount": 20,
     "likeCount": 0,
     "author": null,
     "git": {
@@ -27,7 +27,7 @@
     "tags": [],
     "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/nextjs",
     "forkCount": 0,
-    "viewCount": 26,
+    "viewCount": 27,
     "likeCount": 0,
     "author": null,
     "git": {
@@ -35,7 +35,7 @@
       "branch": "main",
       "repo": "sandbox-templates",
       "username": "legionedge",
-      "commit_sha": "dd5078c379cfebc5cc3d6547885f5d24a787d2bd"
+      "commit_sha": "4ffb48d34c9ee9ea261dc4bfaa191dd79a68d407"
     },
     "insertedAt": "2025-07-04T00:56:32"
   },
@@ -47,7 +47,7 @@
     "tags": [],
     "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/vite-ts",
     "forkCount": 0,
-    "viewCount": 19,
+    "viewCount": 20,
     "likeCount": 0,
     "author": null,
     "git": {
