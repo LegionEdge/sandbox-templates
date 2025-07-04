@@ -1,29 +1,29 @@
 [
   {
-    "id": "fxis37",
+    "id": "knzj76",
     "title": "Next.js",
     "description": "The official Next.js template by the CodeSandbox team",
     "iconUrl": "https://raw.githubusercontent.com/codesandbox/sandbox-templates/main/nextjs/.codesandbox/icon.png",
     "tags": [
+      "react",
+      "frontend",
+      "javascript",
       "featured",
       "typescript",
-      "react",
-      "javascript",
-      "frontend",
       "nextjs"
     ],
-    "editorUrl": "https://codesandbox.io/s/github/codesandbox/sandbox-templates/tree/main/nextjs",
-    "forkCount": 121374,
-    "viewCount": 2266754,
+    "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/nextjs",
+    "forkCount": 0,
+    "viewCount": 0,
     "likeCount": 0,
     "author": null,
     "git": {
       "path": "nextjs",
       "branch": "main",
       "repo": "sandbox-templates",
-      "username": "codesandbox",
-      "commit_sha": "ca52f0f2c1393a1bf1a998d3e90fcc0084d0bfde"
+      "username": "legionedge",
+      "commit_sha": "7f346336204b137d8d376b7710fa52c2668ddb7a"
     },
-    "insertedAt": "2022-09-21T19:49:57"
+    "insertedAt": "2025-07-04T00:56:32"
   }
 ]
