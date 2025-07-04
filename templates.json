@@ -4,12 +4,7 @@
     "title": "Astro",
     "description": "The official Astro template",
     "iconUrl": "https://raw.githubusercontent.com/codesandbox/sandbox-templates/main/astro/.codesandbox/icon.png",
-    "tags": [
-      "typescript",
-      "javascript",
-      "frontend",
-      "astro"
-    ],
+    "tags": ["typescript", "javascript", "frontend", "astro"],
     "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/astro",
     "forkCount": 0,
     "viewCount": 36,
@@ -67,7 +62,7 @@
   {
     "id": "knzj76",
     "title": "nextjs",
-    "description": "The official Next.js template by the CodeSandbox team",
+    "description": "The official Next.js template by the LegionEdge team",
     "iconUrl": "github",
     "tags": [],
     "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/nextjs",
