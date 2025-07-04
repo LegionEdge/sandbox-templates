@@ -1,45 +1,5 @@
 [
   {
-    "id": "zxgjrl",
-    "title": "Astro",
-    "description": "The official Astro template",
-    "iconUrl": "https://raw.githubusercontent.com/codesandbox/sandbox-templates/main/astro/.codesandbox/icon.png",
-    "tags": ["typescript", "javascript", "frontend", "astro"],
-    "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/astro",
-    "forkCount": 0,
-    "viewCount": 36,
-    "likeCount": 0,
-    "author": null,
-    "git": {
-      "path": "astro",
-      "branch": "main",
-      "repo": "sandbox-templates",
-      "username": "legionedge",
-      "commit_sha": "dd5078c379cfebc5cc3d6547885f5d24a787d2bd"
-    },
-    "insertedAt": "2025-07-04T01:46:40"
-  },
-  {
-    "id": "y4pq3g",
-    "title": "astro-starlight",
-    "description": null,
-    "iconUrl": "github",
-    "tags": [],
-    "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/astro-starlight",
-    "forkCount": 0,
-    "viewCount": 8,
-    "likeCount": 0,
-    "author": null,
-    "git": {
-      "path": "astro-starlight",
-      "branch": "main",
-      "repo": "sandbox-templates",
-      "username": "legionedge",
-      "commit_sha": "244c7191a81551aa64bd8f4a3b7f3071bc6b5f76"
-    },
-    "insertedAt": "2025-07-04T01:46:40"
-  },
-  {
     "id": "86vs46",
     "title": "astro-tailwind",
     "description": null,
@@ -47,7 +7,7 @@
     "tags": [],
     "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/astro-tailwind",
     "forkCount": 0,
-    "viewCount": 12,
+    "viewCount": 13,
     "likeCount": 0,
     "author": null,
     "git": {
@@ -55,19 +15,19 @@
       "branch": "main",
       "repo": "sandbox-templates",
       "username": "legionedge",
-      "commit_sha": "244c7191a81551aa64bd8f4a3b7f3071bc6b5f76"
+      "commit_sha": "848976055c66c8ce5fc5a6bae3644be6f8efa539"
     },
     "insertedAt": "2025-07-04T01:46:40"
   },
   {
     "id": "knzj76",
     "title": "nextjs",
-    "description": "The official Next.js template by the LegionEdge team",
+    "description": "The official Next.js template by the CodeSandbox team",
     "iconUrl": "github",
     "tags": [],
     "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/nextjs",
     "forkCount": 0,
-    "viewCount": 19,
+    "viewCount": 20,
     "likeCount": 0,
     "author": null,
     "git": {
@@ -80,66 +40,6 @@
     "insertedAt": "2025-07-04T00:56:32"
   },
   {
-    "id": "ljn4jt",
-    "title": "qwik-vite",
-    "description": null,
-    "iconUrl": "github",
-    "tags": [],
-    "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/qwik-vite",
-    "forkCount": 0,
-    "viewCount": 8,
-    "likeCount": 0,
-    "author": null,
-    "git": {
-      "path": "qwik-vite",
-      "branch": "main",
-      "repo": "sandbox-templates",
-      "username": "legionedge",
-      "commit_sha": "244c7191a81551aa64bd8f4a3b7f3071bc6b5f76"
-    },
-    "insertedAt": "2025-07-04T01:46:40"
-  },
-  {
-    "id": "ydr6vm",
-    "title": "react-vite-ts",
-    "description": null,
-    "iconUrl": "github",
-    "tags": [],
-    "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/react-vite-ts",
-    "forkCount": 0,
-    "viewCount": 12,
-    "likeCount": 0,
-    "author": null,
-    "git": {
-      "path": "react-vite-ts",
-      "branch": "main",
-      "repo": "sandbox-templates",
-      "username": "legionedge",
-      "commit_sha": "244c7191a81551aa64bd8f4a3b7f3071bc6b5f76"
-    },
-    "insertedAt": "2025-07-04T01:46:40"
-  },
-  {
-    "id": "tqk65n",
-    "title": "solid-vite",
-    "description": null,
-    "iconUrl": "github",
-    "tags": [],
-    "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/solid-vite",
-    "forkCount": 0,
-    "viewCount": 12,
-    "likeCount": 0,
-    "author": null,
-    "git": {
-      "path": "solid-vite",
-      "branch": "main",
-      "repo": "sandbox-templates",
-      "username": "legionedge",
-      "commit_sha": "244c7191a81551aa64bd8f4a3b7f3071bc6b5f76"
-    },
-    "insertedAt": "2025-07-04T01:46:40"
-  },
-  {
     "id": "7xm327",
     "title": "vite-ts",
     "description": null,
@@ -147,7 +47,7 @@
     "tags": [],
     "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/vite-ts",
     "forkCount": 0,
-    "viewCount": 10,
+    "viewCount": 11,
     "likeCount": 0,
     "author": null,
     "git": {
@@ -155,27 +55,7 @@
       "branch": "main",
       "repo": "sandbox-templates",
       "username": "legionedge",
-      "commit_sha": "244c7191a81551aa64bd8f4a3b7f3071bc6b5f76"
-    },
-    "insertedAt": "2025-07-04T01:46:40"
-  },
-  {
-    "id": "qw76mr",
-    "title": "vue-vite",
-    "description": null,
-    "iconUrl": "github",
-    "tags": [],
-    "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/vue-vite",
-    "forkCount": 0,
-    "viewCount": 8,
-    "likeCount": 0,
-    "author": null,
-    "git": {
-      "path": "vue-vite",
-      "branch": "main",
-      "repo": "sandbox-templates",
-      "username": "legionedge",
-      "commit_sha": "244c7191a81551aa64bd8f4a3b7f3071bc6b5f76"
+      "commit_sha": "848976055c66c8ce5fc5a6bae3644be6f8efa539"
     },
     "insertedAt": "2025-07-04T01:46:40"
   }
