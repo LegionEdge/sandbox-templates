@@ -4,7 +4,7 @@ import path from 'path';
 const templates = JSON.parse(readFileSync('templates.json', 'utf-8'));
 
 const rows = templates.map(t => {
-  const url = `https://github.com/LegionEdge/sandbox-templates/tree/main/${t.path}`;
+  const url = `https://github.com/LegionEdge/sandbox-templates/tree/main/${t.git.path}`;
   return `| [${t.title}](${url}) | ${t.description || ''} |`;
 });
 
