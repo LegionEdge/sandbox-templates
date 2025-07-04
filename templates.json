@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "id": "fxis37",
+    "title": "Next.js",
+    "description": "The official Next.js template by the CodeSandbox team",
+    "iconUrl": "https://raw.githubusercontent.com/codesandbox/sandbox-templates/main/nextjs/.codesandbox/icon.png",
+    "tags": [
+      "featured",
+      "typescript",
+      "react",
+      "javascript",
+      "frontend",
+      "nextjs"
+    ],
+    "editorUrl": "https://codesandbox.io/s/github/codesandbox/sandbox-templates/tree/main/nextjs",
+    "forkCount": 121374,
+    "viewCount": 2266754,
+    "likeCount": 0,
+    "author": null,
+    "git": {
+      "path": "nextjs",
+      "branch": "main",
+      "repo": "sandbox-templates",
+      "username": "codesandbox",
+      "commit_sha": "ca52f0f2c1393a1bf1a998d3e90fcc0084d0bfde"
+    },
+    "insertedAt": "2022-09-21T19:49:57"
+  }
+]
