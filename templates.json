@@ -7,7 +7,7 @@
     "tags": [],
     "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/astro",
     "forkCount": 0,
-    "viewCount": 0,
+    "viewCount": 1,
     "likeCount": 0,
     "author": null,
     "git": {
@@ -27,7 +27,7 @@
     "tags": [],
     "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/astro-starlight",
     "forkCount": 0,
-    "viewCount": 0,
+    "viewCount": 1,
     "likeCount": 0,
     "author": null,
     "git": {
@@ -47,7 +47,7 @@
     "tags": [],
     "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/astro-tailwind",
     "forkCount": 0,
-    "viewCount": 0,
+    "viewCount": 1,
     "likeCount": 0,
     "author": null,
     "git": {
@@ -67,7 +67,7 @@
     "tags": [],
     "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/nextjs",
     "forkCount": 0,
-    "viewCount": 5,
+    "viewCount": 6,
     "likeCount": 0,
     "author": null,
     "git": {
@@ -87,7 +87,7 @@
     "tags": [],
     "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/qwik-vite",
     "forkCount": 0,
-    "viewCount": 0,
+    "viewCount": 1,
     "likeCount": 0,
     "author": null,
     "git": {
@@ -107,7 +107,7 @@
     "tags": [],
     "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/react-vite-ts",
     "forkCount": 0,
-    "viewCount": 0,
+    "viewCount": 1,
     "likeCount": 0,
     "author": null,
     "git": {
@@ -127,7 +127,7 @@
     "tags": [],
     "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/solid-vite",
     "forkCount": 0,
-    "viewCount": 0,
+    "viewCount": 1,
     "likeCount": 0,
     "author": null,
     "git": {
@@ -147,7 +147,7 @@
     "tags": [],
     "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/vite-ts",
     "forkCount": 0,
-    "viewCount": 0,
+    "viewCount": 1,
     "likeCount": 0,
     "author": null,
     "git": {
@@ -167,7 +167,7 @@
     "tags": [],
     "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/vue-vite",
     "forkCount": 0,
-    "viewCount": 0,
+    "viewCount": 1,
     "likeCount": 0,
     "author": null,
     "git": {
