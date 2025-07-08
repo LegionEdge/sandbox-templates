@@ -2,9 +2,6 @@ name: Build & Publish CodeSandbox Templates
 
 on:
   push:
-    paths:
-      - 'sandbox-templates/**'
-      - 'templates.json'
   workflow_dispatch:
 
 permissions:
