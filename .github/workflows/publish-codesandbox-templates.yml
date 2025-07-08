@@ -1,11 +1,14 @@
+# .github/workflows/publish-codesandbox-templates.yml
 name: Build & Publish CodeSandbox Templates
 
 on:
   push:
+    paths:
+      - '**'
   workflow_dispatch:
 
 permissions:
-  contents: write  # Allow committing to the repo
+  contents: write
 
 jobs:
   publish:
@@ -20,45 +23,54 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '22'
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Build & publish templates and update templates.json
+      - name: Build & publish templates, generate templates.json
         run: |
           set -euo pipefail
-          cp templates.json templates.json.bak
 
-          # Make a jq filter to update templateId for each
-          jq_script='
-          def update_template_id($name; $id): .[$name].templateId = $id;
-          reduce inputs as $in (.; update_template_id($in.name; $in.id))
-          '
+          # Discover all template folders (excluding files and .github)
+          templates=()
+          while IFS= read -r d; do
+            templates+=("$d")
+          done < <(find . -maxdepth 1 -type d ! -name '.git' ! -name 'node_modules' ! -name '.' ! -name '.github' -printf '%P\n')
 
-          # Collect update commands for jq
-          jq_inputs=()
+          # Start templates.json
+          echo '{' > templates.json
 
-          for tmpl in sandbox-templates/*/; do
-            tmpl_name=$(basename "$tmpl")
-            echo "⏳ Publishing $tmpl_name..."
+          first=1
+          for tmpl in "${templates[@]}"; do
+            # Skip empty names
+            [ -z "$tmpl" ] && continue
 
-            # Publish with SDK, capturing output
-            publish_json=$(npx @codesandbox/sdk build "$tmpl" --ci --json)
+            echo "⏳ Publishing $tmpl..."
 
-            # Extract templateId from SDK output (json)
-            template_id=$(echo "$publish_json" | jq -r '.template.id')
-            echo "✅ Published $tmpl_name, got templateId: $template_id"
+            # Build and publish, capture output (store in a temp log)
+            LOG=$(mktemp)
+            npx @codesandbox/sdk build "$tmpl" --ci > "$LOG" 2>&1 || { cat "$LOG"; exit 1; }
 
-            jq_inputs+=("{\"name\":\"$tmpl_name\",\"id\":\"$template_id\"}")
+            # Extract templateId from the log
+            template_id=$(grep -Eo 'template id: [a-zA-Z0-9]+' "$LOG" | awk '{print $3}' | tail -n1)
+            if [ -z "$template_id" ]; then
+              echo "❌ Failed to find template id in SDK output for $tmpl"
+              cat "$LOG"
+              exit 1
+            fi
+
+            # Add to templates.json
+            [ $first -eq 0 ] && echo ',' >> templates.json
+            echo "  \"$tmpl\": { \"templateId\": \"$template_id\" }" >> templates.json
+            first=0
+            echo "✅ Published $tmpl: $template_id"
           done
 
-          # Rebuild templates.json with new IDs
-          jq_script='def update_template_id($name; $id): .[$name].templateId = $id; reduce inputs as $in (.; update_template_id($in.name; $in.id))'
-          jq -s "$jq_script" templates.json.bak <(printf '%s\n' "${jq_inputs[@]}") > templates.json
+          echo '}' >> templates.json
 
       - name: Commit & push updated templates.json
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "ci: update templates.json with latest template IDs"
+          commit_message: "ci: generate templates.json with published template IDs"
           file_pattern: templates.json
