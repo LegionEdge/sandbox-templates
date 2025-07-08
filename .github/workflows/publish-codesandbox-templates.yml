@@ -36,7 +36,7 @@ jobs:
           templates=()
           while IFS= read -r d; do
             templates+=("$d")
-          done < <(find . -maxdepth 1 -type d ! -name '.git' ! -name 'node_modules' ! -name '.' ! -name '.github' -printf '%P\n')
+          done < <(find . -maxdepth 1 -type d ! -name '.git' ! -name '.vscode' ! -name 'node_modules' ! -name '.' ! -name '.github' -printf '%P\n')
 
           # Start templates.json
           echo '{' > templates.json
