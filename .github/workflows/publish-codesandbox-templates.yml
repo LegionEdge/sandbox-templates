@@ -1,0 +1,67 @@
+name: Build & Publish CodeSandbox Templates
+
+on:
+  push:
+    paths:
+      - 'sandbox-templates/**'
+      - 'templates.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write  # Allow committing to the repo
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      CSB_API_KEY: ${{ secrets.CSB_API_KEY }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build & publish templates and update templates.json
+        run: |
+          set -euo pipefail
+          cp templates.json templates.json.bak
+
+          # Make a jq filter to update templateId for each
+          jq_script='
+          def update_template_id($name; $id): .[$name].templateId = $id;
+          reduce inputs as $in (.; update_template_id($in.name; $in.id))
+          '
+
+          # Collect update commands for jq
+          jq_inputs=()
+
+          for tmpl in sandbox-templates/*/; do
+            tmpl_name=$(basename "$tmpl")
+            echo "⏳ Publishing $tmpl_name..."
+
+            # Publish with SDK, capturing output
+            publish_json=$(npx @codesandbox/sdk build "$tmpl" --ci --json)
+
+            # Extract templateId from SDK output (json)
+            template_id=$(echo "$publish_json" | jq -r '.template.id')
+            echo "✅ Published $tmpl_name, got templateId: $template_id"
+
+            jq_inputs+=("{\"name\":\"$tmpl_name\",\"id\":\"$template_id\"}")
+          done
+
+          # Rebuild templates.json with new IDs
+          jq_script='def update_template_id($name; $id): .[$name].templateId = $id; reduce inputs as $in (.; update_template_id($in.name; $in.id))'
+          jq -s "$jq_script" templates.json.bak <(printf '%s\n' "${jq_inputs[@]}") > templates.json
+
+      - name: Commit & push updated templates.json
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "ci: update templates.json with latest template IDs"
+          file_pattern: templates.json
