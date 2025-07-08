@@ -53,7 +53,7 @@ export function getClusterPreviewUrls(
   );
 }
 
-const owner = "codesandbox";
+const owner = "legionedge";
 const repo = "sandbox-templates";
 const branch = "main";
 
