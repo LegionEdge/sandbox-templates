@@ -6,8 +6,8 @@
     "iconUrl": "github",
     "tags": [],
     "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/astro-tailwind",
-    "forkCount": 0,
-    "viewCount": 35,
+    "forkCount": 1,
+    "viewCount": 48,
     "likeCount": 0,
     "author": null,
     "git": {
@@ -27,7 +27,7 @@
     "tags": [],
     "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/nextjs",
     "forkCount": 0,
-    "viewCount": 42,
+    "viewCount": 55,
     "likeCount": 0,
     "author": null,
     "git": {
@@ -35,7 +35,7 @@
       "branch": "main",
       "repo": "sandbox-templates",
       "username": "legionedge",
-      "commit_sha": "f58aefab726235b04ffe8befabf7c7db0d738fc2"
+      "commit_sha": "10de68be8a741ca1ee182b5f8a37e37156cea6b5"
     },
     "insertedAt": "2025-07-04T00:56:32"
   },
@@ -47,7 +47,7 @@
     "tags": [],
     "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/react",
     "forkCount": 0,
-    "viewCount": 5,
+    "viewCount": 21,
     "likeCount": 0,
     "author": null,
     "git": {
@@ -67,7 +67,7 @@
     "tags": [],
     "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/remix",
     "forkCount": 0,
-    "viewCount": 5,
+    "viewCount": 19,
     "likeCount": 0,
     "author": null,
     "git": {
@@ -87,7 +87,7 @@
     "tags": [],
     "editorUrl": "https://codesandbox.io/s/github/legionedge/sandbox-templates/tree/main/vite-ts",
     "forkCount": 0,
-    "viewCount": 35,
+    "viewCount": 48,
     "likeCount": 0,
     "author": null,
     "git": {
